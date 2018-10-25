@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function func1(){
+                document.getElementById("form").action="/per2/insert";;
+                document.getElementById("form").submit();
+            }
+            
+            function func2(){
+                document.getElementById("form").action="/per2/view";
+                document.getElementById("form").submit();
+            }
+            function func3(){
+                document.getElementById("form").action="/per2/filter";
+                document.getElementById("form").submit();
+            }
+            
+            function func4(){
+                document.getElementById("form").action="/per2/bar.jsp";
+                document.getElementById("form").submit();
+            }
+            
+        </script>
+    </head>
+    <body>
+        <form method="post" action="#" id="form">
+            <button onclick="func1()">Insert</button>
+        <!--<input type="button" onclick="func1()" id="one" value="Request for Help"/>-->
+                <button onclick="func2()">Display Whole Table</button>
+                Filter by:<select name="ch" size="1">
+                <option value="point">Points</option>
+                <option value="win">Wins</option>
+                </select>
+                Value:<input type="number" name="val"/>
+                <button onclick="func3()">Filter</button>
+                <button onclick="func4()">Bar Charts</button>
+        </form>
+    </body>
+</html>
