@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+        
+        <style>
+            body{
+                background-color:powderblue;
+            }
+            div{
+                float:left;
+                
+            }
+            td{
+                padding:2px;
+            }
+            section{
+                background-color:powderblue;
+            }
+        </style> 
+    </head>
+    <body>
+       
+        <h1 style="text-align: center;color: red;">Registration Form</h1>
+        <form action="/Periodical1/Calc">
+            <table border='0' width='7px' cellpadding='0' cellspacing='0'>
+                
+                
+                <tr><td>Population</td><td><input type="number" name="pop" required/></td></tr>
+                <tr><td>Agriculture GDP</td><td><input type="number" name="gdp" required /></td></tr>
+                
+                <tr><td>Country:</td><td><select name="country" size="1">
+                <option value="india">India</option>
+                <option value="unitedstates">US</option>
+                <option value="unitedkingdom">UK</option>
+                <option value="china">China</option>
+                <option value="france">France</option>
+            </select></td></tr>
+                
+            
+            
+            
+            <tr><td><input type="submit" value="Submit" /></td></tr>
+            </table>    
+        </form>
+        <script>
+            
+            
+           /* function pass(){
+                var x=document.getElementByName("pop");
+                var y=document.getElementByName("pop");
+                var str="/Periodical1/Calc?a="+x+"&b="+w;
+                document.getElementById("pass1").action=str;
+                //document.getElementById("pass1").submit();
+            }*/
+        </script>
+    </body>
+</html>
