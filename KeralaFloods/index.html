@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css" type="text/css"/>
+        <script>
+            function func1(){
+                document.getElementById("form").action="/floods/req.jsp";;
+                document.getElementById("form").submit();
+            }
+            
+            function func2(){
+                document.getElementById("form").action="/floods/print";
+                document.getElementById("form").submit();
+            }
+        </script>
+    </head>
+    <body>
+        <img src="gov.png" style="margin-left:470px" width="200" height="200">
+        
+        <form method="post" action="#" id="form">
+            <img src="req.png" onclick="func1()" />
+        <!--<input type="button" onclick="func1()" id="one" value="Request for Help"/>-->
+                <img src="reg.png" onclick="func2()" />
+        </form>
+    </body>
+</html>
