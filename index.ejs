@@ -3,29 +3,23 @@
   <head>
     <meta charset="utf-8">
     <title>Test</title>
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <div class="container">
       <fieldset>
-          <%= mess %>
         <form action="/" method="post">
-          <input name="user" type="text" class="ghost-input" placeholder="First name" required>
-          <input name="ad" type="text" class="ghost-input" placeholder="Last name" >
-          <input name="date" type="date" class="ghost-input" placeholder="Enrollment date">
-          <input type="submit" class="ghost-button" value="Insert" formaction="save">
-          <input type="submit" class="ghost-button" value="Delete" formaction="delete">
-          <input type="submit" class="ghost-button" value="Search" formaction="search">
-
-
-          <h3>These values are only for using the Update feature. Please enter values only when you want to update existing values. </h3>
-          <input name="f1name" type="text" class="ghost-input" placeholder=" New First name">
-          <input name="l1name" type="text" class="ghost-input" placeholder=" New Last name" >
-          <input name="e1date" type="date" class="ghost-input" placeholder=" New Enrollment date">
-          <input type="submit" class="ghost-button" value="Update" formaction="update">
+          <input name="city" type="text" class="ghost-input" placeholder="Enter a City" required>
+          <input type="submit" class="ghost-button" value="Get Weather">
         </form>
-        
+        <% if(weather !== null){ %>
+          <p><%= weather %></p>
+        <% } %>
+
+        <% if(error !== null){ %>
+          <p><%= error %></p>
+        <% } %>
       </fieldset>
     </div>
   </body>
